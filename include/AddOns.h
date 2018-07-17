@@ -23,11 +23,6 @@
 extern AddOn AddOns [];
 
 /**
- * Initializes all addons.
- */
-void InitializeAddOns (void);
-
-/**
  * Gets the first addon matching the ID.
  * @param  id The ID to match.
  * @return    A pointer to the addon.

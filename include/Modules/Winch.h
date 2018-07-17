@@ -2,11 +2,17 @@
 #ifndef M_WINCH_H
 #define M_WINCH_H
 
-#define DDR_WINCH
-#define PORT_WINCH
-#define MASK_WINCH
-#define HANDLER_WINCH Handler_Winch
+#define DDR_WINCH_POS
+#define PORT_WINCH_POS
+#define MASK_WINCH_POS
+#define HANDLER_WINCH_POS Handler_Winch_Pos
 
-void Handler_Winch (Module *mod, unsigned char t);
+#define DDR_WINCH_NEG
+#define PORT_WINCH_NEG
+#define MASK_WINCH_NEG
+#define HANDLER_WINCH_NEG Handler_Winch_Neg
+
+void Handler_Winch_Pos (Module *mod, unsigned char t);
+void Handler_Winch_Neg (Module *mod, unsigned char t);
 
 #endif

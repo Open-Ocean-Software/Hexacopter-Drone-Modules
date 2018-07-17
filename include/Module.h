@@ -12,6 +12,7 @@ typedef struct
     volatile uint8_t *DDRegister;
     volatile uint8_t *Port;
     unsigned char Mask;
+    unsigned char SavedValue;
     void (*Handler)(Module *mod, unsigned char t);
 } Module;
 
